@@ -44,7 +44,7 @@ const InstructorHeader = ({ open, setOpen }) => {
 
   useEffect(() => {
     if (notifications && notifications.notifications) {
-      // Filter notifications based on logged-in user's ID and courses created by them
+  
       const filtered = notifications.notifications.filter(
         (notification) =>
           notification.instructor &&
