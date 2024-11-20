@@ -26,12 +26,12 @@ const InstructorHeader = ({ open, setOpen }) => {
     setDropdownVisible(!dropdownVisible);
   };
 
-  // Using destructuring to access data and isLoading from the query result
+ 
   const { data: notifications, refetch, isLoading } = useGetAllNotificationInstructorQuery(
     undefined,
     {
       refetchOnMountOrArgChange: true,
-      pollingInterval: 30000, // Optional polling interval for real-time updates
+      pollingInterval: 30000, 
     }
   );
 
